@@ -165,8 +165,8 @@ int GoForIt(TPRJ* Prj) {
 		src += tabs + "\tpublic QVersionClass(uint _giant,uint _major,uint _minor,string _dt=\"00000000000000\",string _status=\"Stable\") {\n";
 		src += tabs + "\t\tgiant=_giant; major=_major; minor=_minor; dt=_dt; Status=_status;\n";
 		src += tabs + "\t}\n";
-		if (Upper(Prj->data->Value("C++", "AddWant")) == "YES") {
-			src += tabs + "\tpublic bool WantVersion(unsigned int _giant,unsigned int _major=0,unsigned int _minor=0) {\n";
+		if (Upper(Prj->data->Value("C#", "AddWant")) == "YES") {
+			src += tabs + "\tpublic bool WantVersion(uint _giant,uint _major=0,uint _minor=0) {\n";
 			src += tabs + "\t\tif (giant< _giant) return false;\n";
 			src += tabs + "\t\tif (giant==_giant && major< _major) return false;\n";
 			src += tabs + "\t\tif (giant==_giant && major==_major && minor<_minor) return false;\n";
