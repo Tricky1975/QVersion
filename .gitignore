@@ -1,0 +1,11 @@
+Release/*
+Test
+
+.DS_Store
+._*
+
+x64
+.vs
+
+MKL*
+*MKL*
